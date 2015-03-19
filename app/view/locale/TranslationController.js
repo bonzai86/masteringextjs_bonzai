@@ -12,6 +12,8 @@ Ext.define('Packt.view.locale.TranslationController', {
             button.setText('English');
         } else if (lang == 'es'){
             button.setText('Español');
+        } else if (lang == 'de'){
+            button.setText('Deutsch')
         } else {
             button.setText('Português');
         }

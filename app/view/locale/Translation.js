@@ -21,6 +21,11 @@ Ext.define('Packt.view.locale.Translation', {
                 iconCls: 'en',
                 text: 'English'
             },
+			{
+                xtype: 'menuitem',
+                iconCls: 'de',
+                text: 'Deutsch'
+            },
             {
                 xtype: 'menuitem',
                 iconCls: 'es',
