@@ -10,6 +10,7 @@ Ext.define('Packt.view.main.Main', {
     plugins: 'viewport',
 
     xtype: 'app-main',
+    controller: 'main',
 
     requires: [
         'Packt.view.main.Header',

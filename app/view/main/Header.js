@@ -8,7 +8,8 @@ Ext.define('Packt.view.main.Header', {
 
     ui: 'footer',
 
-    items: [{
+    items: [
+        {
             xtype: 'component',
             bind: {
                 html: '{appHeaderIcon}'
@@ -21,8 +22,6 @@ Ext.define('Packt.view.main.Header', {
             }
         },{
             xtype: 'tbfill'
-        },{
-            //xtype: 'responsive-mainmenu'
         },{
             xtype: 'translation'
         },{
