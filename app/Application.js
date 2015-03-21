@@ -17,11 +17,15 @@ function loadLocale(){
 
 loadLocale();
 
-Ext.require('Packt.view.login.Login');
-Ext.require('Packt.view.main.Main');
 
 Ext.define('Packt.Application', {
     extend: 'Ext.app.Application',
+    
+    requires: [
+        'Packt.view.login.Login',
+        'Packt.view.main.Main',
+        'Packt.overrides.tree.ColumnOverride'
+    ],
     
     name: 'Packt',
 
@@ -31,13 +35,16 @@ Ext.define('Packt.Application', {
     ],
 
     controllers: [
+        //'Root',
+        'Menu'
     ],
 
     stores: [
     ],
 
     defaultToken : 'home',
-    
+    glyphFontFamily: 'FontAwesome',
+
     launch: function () {
 
        var me = this;

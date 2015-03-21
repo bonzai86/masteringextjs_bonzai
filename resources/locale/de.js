@@ -14,4 +14,22 @@
     capsLockMsg4: 'bevor sie ihr Kennwort eingeben.',
 
     home: 'Home',
+    
+     menu: 'Menü',
+     
+    //Menus
+    menu1 : 'Sicherheit',
+    menu11 : 'Gruppen und Berechtigungen',
+    menu12 : 'Benutzer',
+
+    staticData: 'Definitionen',
+    actors: 'Schauspieler',
+    categories: 'Kategorien',
+    languages: 'Sprachen',
+    cities: 'Städte',
+    countries: 'Länder',
+    cms: 'Inhaltsverwaltung',
+    films: 'Filme',
+    reports: 'Auswertung',
+    salesfilmcategory: 'Verkäufe (Filmkategorien)'
 };
