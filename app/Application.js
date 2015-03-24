@@ -24,7 +24,8 @@ Ext.define('Packt.Application', {
     requires: [
         'Packt.view.login.Login',
         'Packt.view.main.Main',
-        'Packt.overrides.tree.ColumnOverride'
+        'Packt.overrides.tree.ColumnOverride',
+        'Packt.model.security.User'
     ],
     
     name: 'Packt',
