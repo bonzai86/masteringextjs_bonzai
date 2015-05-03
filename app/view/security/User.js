@@ -3,10 +3,10 @@ Ext.define('Packt.view.security.User', {
     xtype: 'user',
     
     requires: [
-        'Packt.util.Glyphs',
         'Packt.view.security.UsersGrid',
         'Packt.view.security.UserModel',
-        'Packt.view.security.UserController'
+        'Packt.view.security.UserController',
+        'Packt.util.Glyphs'
     ],
     
     controller: 'user',
@@ -15,11 +15,13 @@ Ext.define('Packt.view.security.User', {
         type: 'user'
     },
     
+    session: true,
+    
     frame: true,
     
     layout: {
         type: 'vbox',
-        align: 'strech'
+        align: 'stretch'
     },
     
     items: [
@@ -37,7 +39,7 @@ Ext.define('Packt.view.security.User', {
                 {
                     xtype: 'button',
                     text: 'Add',
-                    //glyph: Packt.util.Glyphs.getGlyph('add'),
+                    glyph: Packt.util.Glyphs.getGlyph('add'),
                     listeners: {
                         click: 'onAdd'
                     }
@@ -45,7 +47,7 @@ Ext.define('Packt.view.security.User', {
                 {
                     xtype: 'button',
                     text: 'Edit',
-                    //glyph: Packt.util.Glyphs.getGlyph('edit'),
+                    glyph: Packt.util.Glyphs.getGlyph('edit'),
                     listeners: {
                         click: 'onEdit'
                     },
@@ -56,7 +58,7 @@ Ext.define('Packt.view.security.User', {
                 {
                     xtype: 'button',
                     text: 'Delete',
-                    //glyph: Packt.util.Glyphs.getGlyph('destroy'),
+                    glyph: Packt.util.Glyphs.getGlyph('destroy'),
                     listeners: {
                         click: 'onDelete'
                     },

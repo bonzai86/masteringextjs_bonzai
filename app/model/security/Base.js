@@ -20,7 +20,7 @@ Ext.define('Packt.model.security.Base', {
                 read : '{prefix}/{entityName:lowercase}/list.php',
                 create : '{prefix}/{entityName:lowercase}/create.php',
                 update : '{prefix}/{entityName:lowercase}/update.php',
-                destory : '{prefix}/{entityName:lowercase}/destroy.php'
+                destroy : '{prefix}/{entityName:lowercase}/destroy.php'
             },
             reader: {
                 type: 'json',

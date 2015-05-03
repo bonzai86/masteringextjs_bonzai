@@ -18,6 +18,7 @@ function loadLocale(){
 loadLocale();
 
 
+
 Ext.define('Packt.Application', {
     extend: 'Ext.app.Application',
     
@@ -25,7 +26,9 @@ Ext.define('Packt.Application', {
         'Packt.view.login.Login',
         'Packt.view.main.Main',
         'Packt.overrides.tree.ColumnOverride',
-        'Packt.model.security.User'
+        'Packt.model.security.User',
+        'Packt.model.security.Group',
+        'Packt.util.Glyphs'
     ],
     
     name: 'Packt',

@@ -1,4 +1,4 @@
-Ext.define('Packt.view.main.Footer', {
+	Ext.define('Packt.view.main.Footer', {
     extend: 'Ext.container.Container',
     xtype: 'appfooter',
 

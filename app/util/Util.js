@@ -43,6 +43,16 @@ Ext.define('Packt.util.Util', {
                 case Ext.form.action.Action.SERVER_INVALID:
                     me.showErrorMsg(result.msg);
             }
+        },
+        
+        showToast: function(text) {
+            Ext.toast({
+                html: text,
+                closable: false,
+                align: 't',
+                slideInDuration: 400,
+                minWidth: 400
+            });
         }
     }
 });
