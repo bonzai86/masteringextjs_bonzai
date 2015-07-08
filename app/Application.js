@@ -17,8 +17,6 @@ function loadLocale(){
 
 loadLocale();
 
-
-
 Ext.define('Packt.Application', {
     extend: 'Ext.app.Application',
     
@@ -28,7 +26,9 @@ Ext.define('Packt.Application', {
         'Packt.overrides.tree.ColumnOverride',
         'Packt.model.security.User',
         'Packt.model.security.Group',
-        'Packt.util.Glyphs'
+        'Packt.util.Glyphs',
+        'Packt.view.menu.Tree',
+        'Packt.view.security.User'
     ],
     
     name: 'Packt',
@@ -75,9 +75,9 @@ Ext.define('Packt.Application', {
        });
 
 
-        task.delay(2000);
+        task.delay(20);
 
-        Ext.widget('login-dialog');
+        //Ext.widget('login-dialog');
     },
 
     init: function () {
@@ -93,5 +93,6 @@ Ext.define('Packt.Application', {
         Ext.DomHelper.insertFirst(Ext.query('.x-mask-msg')[0], {
             cls: 'x-splash-icon'
         });
+        
     }
 });

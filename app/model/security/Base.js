@@ -5,10 +5,8 @@ Ext.define('Packt.model.security.Base', {
         'Packt.util.Util'
     ],
     
-    idProperty: 'id',
-    
     fields: [
-        { name: 'id', type: 'int' }
+        //{ name: 'id', type: 'int' }
     ],
     
     schema: {

@@ -9,11 +9,15 @@ if(empty($_SESSION["username"])) {
 }
 
 $groupId = isset($_REQUEST['group']);
+$userId = isset($_REQUEST['id']);
 
 $sql = "SELECT id, name, userName, email, picture, groups_id FROM user";
 
 if ($groupId) {
     $sql .= " WHERE group_id = '$groupId'";
+}
+if ($userId) {
+    $sql .= " WHERE id = '" . $_REQUEST['id'] . "'";
 }
 
 $result = array();
@@ -23,13 +27,13 @@ if ($resultdb = $mysqli->query($sql)) {
     while($profile = $resultdb->fetch_assoc()) {
 
 
-        /*$sqlQuery = "SELECT * FROM groups WHERE id = " . $profile['groups_id'];
+        $sqlQuery = "SELECT * FROM groups WHERE id = " . $profile['groups_id'];
 
         if ($resultDb1 = $mysqli->query($sqlQuery)) {
             while ($item = $resultDb1->fetch_assoc()) {
                 $profile['group'] = $item;
             }
-        }*/
+        }
 
         $result[] = $profile;
     }

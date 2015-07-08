@@ -2,13 +2,13 @@ Ext.define('Packt.model.security.User', {
     extend: 'Packt.model.security.Base',
     
     entityName: 'User',
+    idProperty: 'id',
     
     fields: [
         { name: 'name'},
         { name: 'userName'},
         { name: 'email'},
         { name: 'picture'},
-        { name: 'groups_id', type: 'int'},
         { name: 'groupName', type: 'string', persist:false,
             convert:function(v, rec){
                 var data = rec.data;
@@ -37,14 +37,6 @@ Ext.define('Packt.model.security.User', {
             { type: 'email' }
         ],
         groups_id: 'presence'
-    },
-
-    hasOne: [
-        {
-            model: 'Group',
-            name: 'group',
-            foreignKey:'groups_id',
-            associationKey: 'group'
-        }
-    ]
+    }
+    
 });
