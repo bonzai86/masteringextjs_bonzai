@@ -27,8 +27,7 @@ Ext.define('Packt.Application', {
         'Packt.model.security.User',
         'Packt.model.security.Group',
         'Packt.util.Glyphs',
-        'Packt.view.menu.Tree',
-        'Packt.view.security.User'
+        'Packt.view.menu.Tree'
     ],
     
     name: 'Packt',
@@ -40,7 +39,8 @@ Ext.define('Packt.Application', {
 
     controllers: [
         //'Root',
-        'Menu'
+        'Menu',
+        'StaticData'
     ],
 
     stores: [

@@ -8,8 +8,11 @@ Ext.application({
 
     extend: 'Packt.Application',
     
-    autoCreateViewport: false//'Packt.view.main.Main'
+    autoCreateViewport: false,
+    //'Packt.view.main.Main'
 	
+    
+    
     //-------------------------------------------------------------------------
     // Most customizations should be made to Packt.Application. If you need to
     // customize this file, doing so below this section reduces the likelihood

@@ -2,7 +2,6 @@ Ext.define('Packt.model.security.User', {
     extend: 'Packt.model.security.Base',
     
     entityName: 'User',
-    idProperty: 'id',
     
     fields: [
         { name: 'name'},
